@@ -55,59 +55,6 @@ try:
     def main1():
         show_logo()
         def main12():
-            def get_wifi_profiles():
-                system = platform.system()
-
-                if system == "Windows":
-                    # Запуск команды и получение вывода
-                    output = subprocess.check_output("netsh wlan show profiles", shell=True).decode("utf-8")
-
-                    # Разделение вывода на строки
-                    lines = output.split('\n')
-
-                    # Поиск и извлечение имени профиля Wi-Fi сети
-                    profiles = []
-                    for line in lines:
-                        if "User Profile" in line:
-                            profile = line.split(":")[1].strip()
-                            profiles.append(profile)
-
-                    # Получение паролей для каждого профиля
-                    results = []
-                    for profile in profiles:
-                        command = f"netsh wlan show profile name=\"{profile}\" key=clear"
-                        output = subprocess.check_output(command, shell=True).decode("utf-8")
-
-                        # Поиск и извлечение пароля Wi-Fi сети
-                        password_line = [line.split(":")[1].strip() for line in output.split('\n') if "Key Content" in line]
-
-                        if password_line:
-                            password = password_line[0]
-                            results.append([profile, password])
-
-                    return results
-
-                else:
-                    return []
-
-
-            def print_wifi_profiles(profiles):
-                # Вывод результатов в виде таблицы
-                system = platform.system()
-                if system == 'Windows':
-                    print(Fore.LIGHTRED_EX + "!!! WARNING !!!\nThere are the SSIDs and passwords that are saved in your PC\nWhen you start cracking wifi the ALL PROFILES WILL BE CLEARED!!!\nPlease save it or copy it\nNote: The hacking wifi is illegal, please use this program only for checking security of your wifi\nSaved passwords (on your PC):\n")
-                for profile in profiles:
-                    ssid, password = profile
-                    print(f"SSID: {ssid}")
-                    print(f"Password: {password}")
-                    print()
-
-            # Получение списка SSID и паролей
-            saved_profiles = get_wifi_profiles()
-
-            # Вывод SSID и паролей
-            print_wifi_profiles(saved_profiles)
-
             wifi = PyWiFi()
             ifaces = wifi.interfaces()[0]
             results = None
