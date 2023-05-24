@@ -28,7 +28,7 @@ This is a program for Wifi password brute-forcing that allows you to test the se
 | Version | Improvements|
 |--------|----------------------------------------------|
 | 1.0    | Slightly accelerated the cracking process     |
-| 2.0    | Fixed numerous bugs, completely redesigned the program, added a user interface, significantly accelerated the cracking process using threads, making a program for many OS (including Windows, MacOS, Linux, etc.)|
+| 2.0    | Fixed numerous bugs, completely redesigned the program, added a user interface (in console), significantly accelerated the cracking process using threads, making a program for many OS (including Windows, MacOS, Linux, etc.)|
 
 ## Python Installation
 
