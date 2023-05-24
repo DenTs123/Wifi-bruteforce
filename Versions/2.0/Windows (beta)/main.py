@@ -1,8 +1,12 @@
 try:
     import pip
-    pip.main(['install', 'tabulate'])
-    pip.main(['install', 'pywifi'])
-    pip.main(['install', 'colorama'])
+    import importlib
+    modules = ['tabulate', 'pywifi', 'colorama']
+    for module in modules:
+        try:
+            importlib.import_module(module)
+        except:
+            pip.main(['install', module])
     from tabulate import tabulate
     import platform
     import os
@@ -141,11 +145,9 @@ try:
             # Prompt for file selection
             file_path = None
             while file_path is None:
-                user_input = input(Fore.CYAN + "Enter the file path for cracking (enter to using deafult, ~ 31365827 passwords): " + Fore.RESET)
+                user_input = input(Fore.CYAN + "Enter the file path for cracking: " + Fore.RESET)
                 if user_input:
                     file_path = user_input
-                elif user_input == '':
-                    file_path = 'passwords.txt'
                 else:
                     print(Fore.RED + "Invalid file path. Please try again.")
 
