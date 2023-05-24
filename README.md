@@ -15,9 +15,12 @@
       - [Fedora](#fedora)
       - [CentOS](#centos)
   - [Installation](#installation)
-    - [Install](#install)
-    - [How to use?](#how-to-use)
-    - [Wifi bruteforce menu (Password generator)](#wifi-bruteforce-menu-password-generator)
+    - [1.0](#10)
+      - [Install](#install)
+      - [How to use?](#how-to-use)
+      - [Wifi bruteforce menu (Password generator)](#wifi-bruteforce-menu-password-generator)
+    - [2.0](#20)
+      - [Windows](#windows-1)
   - [Contact](#contact)
 
 ## Introduction
@@ -72,13 +75,13 @@ Python is usually pre-installed on most Linux distributions. If you don't have i
 ## Installation
 1. Download the Wifi Bruteforce program from the Releases section of this repository. (recommended last, 2.0), if you using windows, you can download the 1.0 version but 1.0 works only on Windows 
 2. Extract the zip file with program and use the menu in top to navigate the guide
-    ## 1.0
-     Requirements:
+### 1.0
+Requirements:
 > Python 3 install from [this site](https://python.org)
 > Module pywifi (using pip install pywifi in terminal)
 > Module tkinter (using pip install tkinter in terminal)
 ***
-### Install
+#### Install
 1. Launch the setup.exe file and choose the language
 2. After selecting the language and continuing, the following window should appear:
 ![Tip2](Photos_for_README/Setup1.png)
@@ -93,14 +96,14 @@ If such a window appears as in the photo above, then you must confirm the terms 
 ![Last step](Photos_for_README/Setup5.png)
 7. Final step: Click "install" and wait until the program is installed
 ***
-### How to use?
+#### How to use?
 After installation, a shortcut will appear on the desktop such as in the photo below:
 ![Program shortcut](Photos_for_README/Program's%20shortcut.png)
 1. Launch the program by double-clicking on the program's shortcut
 After starting the program, the following window will appear:
 ![Wifi bruteforce menu](Photos_for_README/Wifi%20bruteforce%20menu%20pic1.png)
 ***
-### Wifi bruteforce menu (Password generator)
+#### Wifi bruteforce menu (Password generator)
 Click button "Password generator" and wait for the generator to start, if the program has started, the following window should appear:
 ![Pas gen](Photos_for_README/Pas%20gen%20pic%201.png)
 Input how many passwords generate and click Enter
@@ -145,6 +148,15 @@ If password is true the program closed and connect you to the Wifi
 How to crack Wifi using the generated passwords?
 Generated passwords stored in file "passwords.txt"
 Input "passwords.txt" instead of "Cracklib.txt"
+
+### 2.0
+#### Windows
+Open cmd and check that you install the git
+
+    git --version
+
+If you get an error install git with [this link](https://git-scm.com/downloads)
+
 
 ## Contact
 
