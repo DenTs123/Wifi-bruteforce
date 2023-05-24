@@ -38,7 +38,7 @@ try:
 ██║ █╗ ██║██║█████╗  ██║                                                           
 ██║███╗██║██║██╔══╝  ██║                                                           
 ╚███╔███╔╝██║██║     ██║                                                           
-╚══╝╚══╝ ╚═╝╚═╝     ╚═╝                                                           
+ ╚══╝╚══╝ ╚═╝╚═╝     ╚═╝                                                           
                                                                                     
 ██████╗ ██████╗ ██╗   ██╗████████╗███████╗███████╗ ██████╗ ██████╗  ██████╗███████╗
 ██╔══██╗██╔══██╗██║   ██║╚══██╔══╝██╔════╝██╔════╝██╔═══██╗██╔══██╗██╔════╝██╔════╝
@@ -215,7 +215,16 @@ try:
         elif user_input == '2':
             generator()
         elif user_input == '3':
-            pass
+            show_logo()
+            print(Fore.CYAN + Style.BRIGHT + """
+ ██████╗██████╗ ███████╗██████╗ ██╗████████╗███████╗
+██╔════╝██╔══██╗██╔════╝██╔══██╗██║╚══██╔══╝██╔════╝
+██║     ██████╔╝█████╗  ██║  ██║██║   ██║   ███████╗
+██║     ██╔══██╗██╔══╝  ██║  ██║██║   ██║   ╚════██║
+╚██████╗██║  ██║███████╗██████╔╝██║   ██║   ███████║
+ ╚═════╝╚═╝  ╚═╝╚══════╝╚═════╝ ╚═╝   ╚═╝   ╚══════╝
+                                                    """)
+            print(Fore.LIGHTGREEN_EX + Style.BRIGHT + "\nWifi bruteforce\nBy DenTs123 (GitHub)\nContributors:\nDenTs123: https://github.com/DenTs123\nOpasniy Chel: https://github.com/opasniychel\nActual version: 2.0\nCurrent version: 2.0\nRepository: https://github.com/DenTs123/Wifi-bruteforce\n\n")
 
 
     if __name__ == "__main__":
