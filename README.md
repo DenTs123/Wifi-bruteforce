@@ -157,6 +157,19 @@ Open cmd and check that you install the git
 
 If you get an error install git with [this link](https://git-scm.com/downloads)
 
+After installing git write in cmd
+
+    git clone https://github.com/DenTs123/Wifi-bruteforce/
+    cd Wifi-bruteforce/Versions/2.0/Windows
+    python main.py
+
+After this you can see the Wifi bruteforce menu
+![Wifi bruteforce](Photos_for_README/Wifi%20bruteforce%20menu.png)
+Watch the tutorial how to brute the wifi
+<iframe scr="https://www.youtube.com/watch?v=et7DR4KaLk4"></iframe>
+
+
+
 
 ## Contact
 
